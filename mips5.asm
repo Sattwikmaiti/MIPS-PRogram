@@ -67,4 +67,22 @@
  li $v0,1
  syscall
  
+   li $v0,4
+   la $a0,newline
+   syscall
+ #division
  
+ 
+addi $t0,$zero,15
+addi $t1,$zero,2
+
+
+div $t0,$t1
+
+mflo $s0 #quotuent
+mfhi $s1 #reminder
+
+move $a0,$s0
+li $v0,1
+syscall
+
