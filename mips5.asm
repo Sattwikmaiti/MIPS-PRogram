@@ -53,6 +53,18 @@
    li $v0,1
    
    syscall
+   #newline 
+  li $v0,4
+   la $a0,newline
+   syscall
+ #multiply 
  
+ li $v0,4
+ la $a0,multiply
+ syscall 
+ #result 
+ mul $a0,$t0,$t1
+ li $v0,1
+ syscall
  
  
